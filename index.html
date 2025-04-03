@@ -3,79 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourabh Tyagi - Animated Portfolio</title>
+    <title>Sourabh Tyagi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1 class="fade-in">Sourabh Tyagi</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1 class="animated-text">Sourabh Tyagi</h1>
+        <p>SoC Physical Design | Digital ASIC | RF/Analog IC Design</p>
+        <a href="mailto:sourabhtyagi750@gmail.com" class="contact-btn">Contact Me</a>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Hi, I'm Sourabh</h2>
-        <p>An aspiring VLSI Engineer with expertise in Analog & Digital IC Design, FPGA, and ASIC Design.</p>
-        <button class="cta">View My Work</button>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="fade-in">
+    <section class="about">
         <h2>About Me</h2>
-        <p>Specialized in **VLSI Design**, RTL to GDSII flow, Digital ASIC Design, and FPGA Development.</p>
+        <p>Seeking an internship at Qualcomm in SoC Physical Design, Digital ASIC Design, and RF/Analog Mixed-Signal IC Design. 
+        Proficient in RTL to GDSII flow, DFT methodologies, FPGA Board Design, and CAD tools.</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skill-bar">
-            <p>VLSI & ASIC Design</p>
-            <div class="bar"><span class="fill" style="width: 90%;"></span></div>
-        </div>
-        <div class="skill-bar">
-            <p>HDL (Verilog, SystemVerilog, UVM)</p>
-            <div class="bar"><span class="fill" style="width: 85%;"></span></div>
-        </div>
-        <div class="skill-bar">
-            <p>FPGA Development (Zynq-7000)</p>
-            <div class="bar"><span class="fill" style="width: 80%;"></span></div>
-        </div>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>VLSI Design (Cadence Virtuoso, Xilinx Vivado)</li>
+            <li>Analog & Mixed Signal Circuit Design (PLL, OpAmp, LNA, ADC/DAC)</li>
+            <li>Programming (Python, Java, C, Perl, Shell Scripting)</li>
+            <li>FPGA Development (Zynq-7000, Vivado HLS)</li>
+        </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <section class="projects">
         <h2>Projects</h2>
-        <div class="project-card fade-in">
+        <div class="project-card">
             <h3>Blind Stick with Image Detection</h3>
-            <p>Smart blind stick with ultrasonic sensors for obstacle detection and AI-based image recognition.</p>
+            <p>Developed a smart blind stick using ultrasonic sensors & image recognition.</p>
         </div>
-        <div class="project-card fade-in">
-            <h3>Combinational Circuit Design</h3>
-            <p>Designed logic gates and arithmetic circuits using Cadence Virtuoso.</p>
+        <div class="project-card">
+            <h3>Combinational Circuits Design</h3>
+            <p>Designed Logic Gates, MUX, DEMUX, and Encoders using 90nm & 45nm tech.</p>
+        </div>
+        <div class="project-card">
+            <h3>Analog Circuit Design</h3>
+            <p>Designed & simulated amplifiers, SRAM, and Schmitt Trigger using Cadence Virtuoso.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sourabhtyagi750@gmail.com">sourabhtyagi750@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-id/" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/your-github-id" target="_blank">GitHub Profile</a></p>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sourabh Tyagi. All Rights Reserved.</p>
+        <p>Connect with me on: 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
