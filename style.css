@@ -1,31 +1,55 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #0073e6;
+    color: white;
+    padding: 10px 0;
     text-align: center;
 }
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-h1, h2 {
-    color: #333;
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
 section {
-    background: #fff;
-    margin: 20px auto;
     padding: 20px;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
 }
-ul {
-    list-style: none;
-}
-footer {
-    background: #222;
-    color: #fff;
+
+/* Project Cards */
+.project {
+    background: #ddd;
     padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0073e6;
+    color: white;
+    margin-top: 20px;
 }
