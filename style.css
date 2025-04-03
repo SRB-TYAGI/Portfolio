@@ -1,17 +1,20 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(45deg, #1e1e1e, #3a3a3a);
+    color: white;
 }
 
 /* Header */
 header {
-    background: #0073e6;
-    color: white;
-    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 nav ul {
@@ -27,29 +30,85 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.cta {
+    background: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #cc5500;
 }
 
 /* Sections */
 section {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
 }
 
-/* Project Cards */
-.project {
-    background: #ddd;
-    padding: 10px;
-    margin: 10px 0;
+/* Skill Bars */
+.skill-bar {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.bar {
+    background: #444;
+    height: 10px;
+    width: 100%;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #ff6600;
+    display: block;
+    transition: width 1s ease-in-out;
+}
+
+/* Projects */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #0073e6;
-    color: white;
-    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
