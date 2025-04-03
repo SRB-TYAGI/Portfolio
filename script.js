@@ -1,12 +1,23 @@
-// GSAP Fade-in Animation
-document.addEventListener("DOMContentLoaded", () => {
-    gsap.to(".fade-in", { opacity: 1, duration: 1, stagger: 0.3 });
-});
-
-// Scroll Animations
-document.addEventListener("scroll", function () {
-    let skills = document.querySelectorAll('.fill');
-    skills.forEach(skill => {
-        skill.style.width = skill.getAttribute('style').split(":")[1];
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth Scrolling
+    document.querySelectorAll("a").forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
+            if (this.getAttribute("href").startsWith("#")) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        });
     });
+
+    // Animated Text Effect
+    let text = document.querySelector(".animated-text");
+    let textArray = ["Sourabh Tyagi", "VLSI Engineer", "Analog IC Designer"];
+    let index = 0;
+
+    setInterval(() => {
+        text.innerHTML = textArray[index];
+        index = (index + 1) % textArray.length;
+    }, 2000);
 });
