@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourabh Tyagi - Portfolio</title>
+    <title>Sourabh Tyagi - Animated Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Header Section -->
     <header>
-        <h1>Sourabh Tyagi</h1>
+        <h1 class="fade-in">Sourabh Tyagi</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -21,43 +22,46 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hi, I'm Sourabh</h2>
+        <p>An aspiring VLSI Engineer with expertise in Analog & Digital IC Design, FPGA, and ASIC Design.</p>
+        <button class="cta">View My Work</button>
+    </section>
+
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>Seeking an internship at Qualcomm in SoC Physical Design, Digital ASIC Design, and RF/Analog Mixed-Signal IC Design. 
-           Proficient in RTL to GDSII flow, DFT methodologies, FPGA Board Design, and CAD tools, with hands-on experience in timing closure, power optimization, and design verification.</p>
+        <p>Specialized in **VLSI Design**, RTL to GDSII flow, Digital ASIC Design, and FPGA Development.</p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>VLSI Design (RTL to GDSII)</li>
-            <li>HDL (Verilog, System Verilog, UVM)</li>
-            <li>Physical Design & Verification</li>
-            <li>FPGA Development (Zynq-7000, Vivado HLS)</li>
-            <li>Analog & Mixed-Signal Circuit Design</li>
-            <li>Programming Languages: Python, Java, C</li>
-        </ul>
+        <div class="skill-bar">
+            <p>VLSI & ASIC Design</p>
+            <div class="bar"><span class="fill" style="width: 90%;"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>HDL (Verilog, SystemVerilog, UVM)</p>
+            <div class="bar"><span class="fill" style="width: 85%;"></span></div>
+        </div>
+        <div class="skill-bar">
+            <p>FPGA Development (Zynq-7000)</p>
+            <div class="bar"><span class="fill" style="width: 80%;"></span></div>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project-card fade-in">
             <h3>Blind Stick with Image Detection</h3>
-            <p>Developed a smart blind stick using ultrasonic sensors for obstacle detection and integrated image recognition with voice feedback.</p>
-            <p><strong>Tools:</strong> Python, OpenCV, TensorFlow, Raspberry Pi</p>
+            <p>Smart blind stick with ultrasonic sensors for obstacle detection and AI-based image recognition.</p>
         </div>
-
-        <div class="project">
+        <div class="project-card fade-in">
             <h3>Combinational Circuit Design</h3>
-            <p>Designed logic gates, multiplexers, and arithmetic circuits using Cadence Virtuoso with 90nm technology.</p>
-        </div>
-
-        <div class="project">
-            <h3>Analog Circuit Design</h3>
-            <p>Designed Common Source Amplifier, Differential Amplifier, and Current Mirror using Cadence Virtuoso.</p>
+            <p>Designed logic gates and arithmetic circuits using Cadence Virtuoso.</p>
         </div>
     </section>
 
@@ -69,9 +73,11 @@
         <p>GitHub: <a href="https://github.com/your-github-id" target="_blank">GitHub Profile</a></p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Sourabh Tyagi. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
